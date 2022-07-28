@@ -1,12 +1,44 @@
 {
-  "name": "stylelint-config",
+  "name": "@douza/stylelint-config",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "continuous integration stylelint-config",
+  "keywords": [
+    "douza",
+    "stylelint"
+  ],
+  "homepage": "https://github.com/JusticHentai/stylelint-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JusticHentai/stylelint-config"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "author": "douza",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "require": "./src/index.js"
+    },
+    "./basic": {
+      "import": "./src/basic.js",
+      "require": "./src/basic.js"
+    },
+    "./less": {
+      "import": "./src/scss.js",
+      "require": "./src/scss.js"
+    }
+  },
+  "main": "src/index.js",
+  "scripts": {},
+  "dependencies": {
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.5.0"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.14",
+    "stylelint": "^14.9.1"
+  }
 }
