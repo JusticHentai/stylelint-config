@@ -1,9 +1,10 @@
 {
   "name": "@justichentai/stylelint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "continuous integration stylelint-config",
   "keywords": [
     "douza",
+    "justichentai",
     "stylelint"
   ],
   "homepage": "https://github.com/JusticHentai/stylelint-config",
