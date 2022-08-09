@@ -2,21 +2,27 @@
 
 continuous integration Stylelint-config
 
+## Install
+
+```bash
+npm i @justichentai/stylelint-config
+```
+
 ## Usage
 
 In `stylelint.config.js`
 ```js
 module.exports = {  
-  extends: ['@douza/stylelint-config'],  
+  extends: ['@justichentai/stylelint-config'],  
 }
 ```
 
 单独使用
 ```js
-module.exports = {  
+module.exports = {
   extends: [
-    '@douza/stylelint-config/basic',
-    '@douza/stylelint-config/scss'
+    '@justichentai/stylelint-config/basic',
+    '@justichentai/stylelint-config/scss'
   ],
 }
 ```
