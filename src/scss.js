@@ -7,7 +7,15 @@ module.exports = {
   override: [
     {
       files: ['**/*.scss'],
-      rules: {},
+      rules: {
+        // mask 不带前缀会有问题
+        'property-no-vendor-prefix': [
+          true,
+          {
+            ignoreProperties: ['mask-image'],
+          },
+        ],
+      },
     },
   ],
 }
