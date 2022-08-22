@@ -1,6 +1,6 @@
 {
   "name": "@justichentai/stylelint-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "continuous integration stylelint-config",
   "keywords": [
     "douza",
@@ -35,6 +35,7 @@
   "main": "src/index.js",
   "scripts": {},
   "dependencies": {
+    "postcss": "^8.4.14",
     "postcss-html": "^1.5.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-prettier-scss": "^0.0.1",
@@ -46,7 +47,6 @@
     "stylelint-declaration-block-no-ignored-properties": "^2.5.0"
   },
   "devDependencies": {
-    "postcss": "^8.4.14",
     "stylelint": "^14.9.1"
   }
 }
