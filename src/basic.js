@@ -32,5 +32,12 @@ module.exports = {
         message: 'Expected class selector to be kebab-case',
       },
     ],
+    // mask 不带前缀会有问题
+    'property-no-vendor-prefix': [
+      true,
+      {
+        ignoreProperties: ['mask-image'],
+      },
+    ],
   },
 }
